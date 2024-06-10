@@ -2,7 +2,6 @@
   --dark: #181818;
   --light: #F0F0F0;
   --primary: #F7FF00;
-  --secondary: #EF767A;
   --tertiary: #456990;
 }
 
@@ -39,7 +38,7 @@ html {
 }
 
 h1 {
-  color: var(--secondary);
+  color: var(--primary);
 }
 
 .typed {

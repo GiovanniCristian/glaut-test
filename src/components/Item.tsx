@@ -8,7 +8,7 @@ const Item: React.FC<ItemProps> = ({ item, addItem, editItem, currentLevel, maxN
         <div className="item" style={{ marginLeft: currentLevel * 30 }}>
             <RenameItem item={item} editItem={editItem} />
             {currentLevel < maxNestingLevel && (
-                <button className='child-btn' onClick={() => addItem(item.id, item.name)}>Add Child</button>
+                <button className='child-btn' onClick={() => addItem(item.id)}>Add new</button>
             )}
             {item.children && item.children.length > 0 && (
                 <div className="children">

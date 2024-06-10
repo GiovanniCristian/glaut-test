@@ -19,7 +19,7 @@ const List: React.FC = () => {
         const addItemToList = (list: ItemListProps[], parentId: number | null): ItemListProps[] => {
             return list.map(item => {
                 if (item.id === parentId) {
-                    return { ...item, children: [...item.children, rename] };
+                    return { ...item, children: [...item.children, newItem] };
                 } else if (item.children) {
                     return { ...item, children: addItemToList(item.children, parentId) };
                 }
@@ -75,7 +75,7 @@ const List: React.FC = () => {
                     placeholder="Create a List"
                     className='input'
                 />
-                <button className='btn' onClick={() => addItem(null)}>Add Top-Level Item</button>
+                <button className='btn' onClick={() => addItem(null)}>Add List</button>
             </div>
             <div className="items">
                 {renderItems(items)}

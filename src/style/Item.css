@@ -3,10 +3,10 @@
     margin-left: 0.5rem;
     width: 7rem;
     height: 2rem;
-    border: 0.14rem solid var(--secondary);
+    border: 0.14rem solid var(--light);
     border-radius: 0.4rem;
     overflow: hidden;
-    padding: 0.4rem;
+    padding: auto 0.4rem;
     font-size: 0.8rem;
     font-weight: 600;
     color: var(--light);

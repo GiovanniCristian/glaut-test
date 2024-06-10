@@ -10,7 +10,7 @@ export interface ItemProps {
         name: string;
         children: ItemProps['item'][];
     };
-    addItem: (parentId: number, name: string) => void;
+    addItem: (parentId: number) => void;
     editItem: (id: number, newName: string) => void;
     currentLevel: number;
     maxNestingLevel: number;
