@@ -10,8 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "antd": "^5.18.0",
+    "lottie-react": "^2.4.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-typed": "^2.0.12"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.4.5",
