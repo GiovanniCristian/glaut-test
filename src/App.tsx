@@ -3,6 +3,7 @@ import { ReactTyped } from "react-typed";
 import Lottie from "lottie-react";
 import List from './components/List'
 import Arrow from './assets/json/arrow.json'
+import React from 'react';
 
 function App() {
 

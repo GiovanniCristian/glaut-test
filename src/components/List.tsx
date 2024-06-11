@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Item from './Item';
 import { ItemListProps } from '../intefaces/Item';
 import { PlusCircleOutlined } from '@ant-design/icons';
 import { Input } from 'antd';
-import '../style/List.css'
+import '../style/List.css';
 
 const List: React.FC = () => {
     const [items, setItems] = useState<ItemListProps[]>([]);
