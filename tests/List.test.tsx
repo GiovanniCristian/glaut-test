@@ -1,12 +1,14 @@
 import { render, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import List from '../src/components/List';
+import Item from '../src/components/Item';
+import RenameItem from '../src/components/RenameItem';
 
 describe('List Component', () => {
-    test('should add a top-level item', () => {
+    test('should add a list', () => {
         const { getByPlaceholderText, getByText, queryByText } = render(typeof List);
         const input = getByPlaceholderText('Create a List');
-        const button = getByText('Add Top-Level Item');
+        const button = getByText('Add List');
 
         fireEvent.change(input, { target: { value: 'New Item' } });
         fireEvent.click(button);
@@ -15,9 +17,9 @@ describe('List Component', () => {
     });
 
     test('should add a child item', () => {
-        const { getByPlaceholderText, getByText, queryByText } = render(typeof List);
-        const input = getByPlaceholderText('Create a List');
-        const button = getByText('Add Top-Level Item');
+        const { getByPlaceholderText, getByText, queryByText } = render(typeof Item);
+        const input = getByPlaceholderText('Create an Item');
+        const button = getByText('Add Item');
 
         fireEvent.change(input, { target: { value: 'Parent Item' } });
         fireEvent.click(button);
@@ -30,9 +32,9 @@ describe('List Component', () => {
     });
 
     test('should edit an item name', () => {
-        const { getByPlaceholderText, getByText, getByDisplayValue, queryByText } = render(typeof List);
+        const { getByPlaceholderText, getByText, getByDisplayValue, queryByText } = render(typeof RenameItem);
         const input = getByPlaceholderText('Create a List');
-        const button = getByText('Add Top-Level Item');
+        const button = getByText('Add Item');
 
         fireEvent.change(input, { target: { value: 'Item to Edit' } });
         fireEvent.click(button);
