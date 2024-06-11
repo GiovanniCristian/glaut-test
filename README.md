@@ -35,3 +35,10 @@ npm run dev
 
 #Run tests
 npm run test
+```
+
+#More info
+Since visual and creativity are the strong points of my role as frontend, I decided to give a personal touch to the challenge, adding a color palette, a personal arrangement of the elements in the browser interface and a light touch of animation (having a lot of interest for lotties and for three.js).
+
+Thank You!
+Giovanni
