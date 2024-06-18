@@ -19,10 +19,10 @@ Step by step guide:
 
 ```bash
 # Repo Clone
-git clone https://github.com/GiovanniCristian/glaut-test.git
+git clone https://github.com/GiovanniCristian/nested-list.git
 
 # Open project directory
-cd glaut-test
+cd nested-list
 
 # Open in VsCode (if in use)
 code .
