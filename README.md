@@ -1,4 +1,4 @@
-# Glaut test - Nested List
+# Nested List
 
 Users can add new items at the top level of the list with new items nested within existing items.
 
@@ -42,4 +42,3 @@ npm run test
 Since visual and creativity are the strong points of my role as frontend, I decided to give a personal touch to the challenge, adding a color palette, a personal arrangement of the elements in the browser interface and a light touch of animation (having a lot of interest for lotties and for three.js).
 
 Thank You!
-Giovanni
